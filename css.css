@@ -1,0 +1,47 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: rgb(214, 214, 214);
+}
+
+.heading-section{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue';
+    font-size: 32px;
+    text-align: center;
+}
+.navbar-brand{
+    font-family: 'Bebas Neue';
+    color:white;
+   
+    
+}
+
+.d-flex.p-4.bg-primary.text-white{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.carousel-item>img{
+    max-height: 100px;
+}
+
+.typeado-texto{
+    font-size: 6px;
+    font-family: 'Bebas Neue';
+    color:white;
+
+}
