@@ -6,7 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-}
+} 
 
 body{
     background: rgb(214, 214, 214);
@@ -141,10 +141,12 @@ a {
     text-align:justify;
   }
 
+
   .rosa{
     color: #d1739f;
   }
-  .jumbotron.rosa-fdo{
+
+   .jumbotron.rosa-fdo{
     background-color: #d1739f;
   }
 
