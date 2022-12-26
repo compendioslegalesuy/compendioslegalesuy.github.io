@@ -13,7 +13,6 @@ function sumarDias(fecha, dias){
     return fecha;
   }
 
-
 function calcular() {   
     
     const feriados = [
@@ -30,7 +29,7 @@ function calcular() {
         [], //Noviembre
         [25,26,27,28,29,30,31] //Diciembre
     ];
-
+    
     const dSemana = [
         'domingo',
         'lunes',
@@ -39,8 +38,8 @@ function calcular() {
         'jueves',
         'viernes',
         'sábado',
-      ]; 
-
+      ];
+    
     var fInicial = document.getElementById('fInicial').value;
     var fInicial2 = new Date(Date.parse(fInicial));
     const fInicial3 = sumarDias( fInicial2 , 1 );
@@ -75,15 +74,15 @@ function calcular() {
     }
 
 function calculaHabilesTotales(dInicio, nDias, dFeriados) {
-    let diaInicial = new Date(dInicio.getFullYear(), dInicio.getMonth(), dInicio.getDate());
+    let diaPropuesto = new Date(dInicio.getFullYear(), dInicio.getMonth(), dInicio.getDate());
     let i = 1;
     while (nDias > 0 ) {
         let festivo = false;
-        diaInicial = new Date(dInicio.getFullYear(), dInicio.getMonth(), dInicio.getDate() + i);
-        if (diaInicial.getDay() > 0 && diaInicial.getDay() < 6) {
+        diaPropuesto = new Date(dInicio.getFullYear(), dInicio.getMonth(), dInicio.getDate() + i);
+        if (diaPropuesto.getDay() > 0 && diaPropuesto.getDay() < 6) {
 
-            let m = diaInicial.getMonth();
-            let dia = diaInicial.getDate();
+            let m = diaPropuesto.getMonth();
+            let dia = diaPropuesto.getDate();
 
             for (let d in dFeriados[m]) {
                 if (dia === dFeriados[m][d]) {
@@ -98,8 +97,9 @@ function calculaHabilesTotales(dInicio, nDias, dFeriados) {
         }
         i++;
     } 
-    return diaInicial;
+    return diaPropuesto;
 } 
+
 
 
 // Typeado
@@ -154,3 +154,4 @@ window.onload = function() {
         }
     }
 };
+ 
