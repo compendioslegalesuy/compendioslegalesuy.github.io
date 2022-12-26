@@ -1,4 +1,3 @@
-
 // Excluye sábados y domingos.
 const addWeekDays = (startDate, count) =>
      Array.from({ length: count }).reduce(date => {
@@ -7,7 +6,7 @@ const addWeekDays = (startDate, count) =>
       date = new Date(date.setDate(date.getDate() + (date.getDay() / 6 + 1) ));
     return date;
      }, startDate);
-
+ 
 
   function limpiar() {
       document.getElementById('fInicial').innerHTM= '' ;
@@ -43,8 +42,5 @@ function calcularHabiles() {
   mostrar.style.display = "block";
 
 }
-
-
-
 
 
